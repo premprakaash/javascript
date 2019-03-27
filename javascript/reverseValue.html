@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Reverse a number</title>
+<script>
+function reverseNumber()
+{	
+	inputValue=document.getElementById("v").value;
+	resultValue=inputValue.split("").reverse().join("");
+	console.log(resultValue);
+	document.getElementById("r").value=resultValue;
+}
+
+</script>
+</head>
+<body>
+<p>
+enter the value :
+</p>
+
+  <input id="v">
+<p>
+reverse of the value is :
+</p>
+<input id="r">
+ <button onclick="reverseNumber();">
+reverse
+</button>
+</body>
+</html>
+
