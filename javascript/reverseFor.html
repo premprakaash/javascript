@@ -5,14 +5,18 @@
 <title>Reverse a number</title>
 <script>
 function reverseNumber()
-{	
-	inputValue=document.getElementById("v").value;
+{	var counter;
+var resultValue="";
+	counter=document.getElementById("v").value;
 	//resultValue=inputValue.split("").reverse().join("");
 	//console.log(resultValue);
-	
+for(var i=counter.length-1;i>=0;i--){
+
+	resultValue+=counter[i];
+console.log(resultValue);	
 	document.getElementById("r").value=resultValue;
 }
-
+}
 </script>
 </head>
 <body>
@@ -30,4 +34,3 @@ reverse
 </button>
 </body>
 </html>
-
