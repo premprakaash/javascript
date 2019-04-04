@@ -30,12 +30,17 @@
             for(let i=0;i<studentDetails.length;i++)
               {
 
-                    student+=studentDetails[i].Name+"      ";
-                    student+=studentDetails[i].Rollno;
-                    document.getElementById("insert").innerHTML=student;
+                  //  student+=studentDetails[i].Name+"      ";
+                    //student+=studentDetails[i].Rollno;
+                    //document.getElementById("insert").innerHTML=student;
                     //document.getElementById("insert").innerHTML=studentDetails.length;
                     //alert(studentDetails[i].Name);
+                    var tb = document.getElementById("insert");
+                    var tr= document.createElement('tr');
+                    tr.innerHTML="<td style='border:1px solid black '>"+studentDetails[i].Name+"</td><td style='border:1px solid black '>"+studentDetails[i].Rollno+"</td>";
+
               }
+              tb.appendChild(tr);
       }
     </script>
   </head>
@@ -47,7 +52,9 @@
     <input type="text" name="" value="" id="name"><br><br>
     <button type="button" name="button" onclick="arrayPush()">insert </button>
   <br><br> <p>values in the list</p>
-<p id="insert"></p>
+<table id="insert" style="border:1px solid black;">
+
+</table>
 
     <br><button type="button" name="button"onclick="arrayDisplay()">Display</button><br>
 
