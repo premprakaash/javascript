@@ -7,9 +7,12 @@ reverse a number
 </title>
 <script>
 function reverseValue(){
+
 fValue=document.getElementById("val").value;
+//alert(fValue);
 rValue=fValue.split("").reverse().join("");
-console.log(rvalue);
+//alert(rValue);
+console.log(rValue);
 document.getElementById("rev").value=rValue;
 }
 </script>
@@ -19,7 +22,7 @@ document.getElementById("rev").value=rValue;
 <input id="val"><br>
 <p>reverse value </p>
 <input id="rev"><br>
-<button onclick="reverseValue"><br>
+<button onclick="reverseValue()"><br>
 reverse
 </button>
 </body>
